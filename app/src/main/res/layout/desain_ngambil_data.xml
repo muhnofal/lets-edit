@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Editor Bio -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/fotoretriv"
+                android:layout_width="133.49dp"
+                android:layout_height="133.49dp"
+                android:src="@drawable/fotoaisyah" />
+
+
+            <!-- Data Editor -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Tulisan 1 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/namaretriv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AISYAH"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/contactretriv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/contactme" />
+
+                </LinearLayout>
+                <!-- Akhir Tulisan 1 -->
+
+                <!-- Tulisan 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tempattahunretriv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INDONESIA | FEBRUARY 2020"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!-- Akhir Tulisan 2 -->
+
+                <!-- Tulisan 3 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bintangretriv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/bintangungu" />
+
+                    <TextView
+                        android:id="@+id/ratingretriv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:text="4.8"
+                        android:textColor="@color/colorSecond"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/kerjaanretriv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/motionagraphungu" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Akhir Data Editor -->
+
+
+        </LinearLayout>
+        <!-- Akhir Editor Bio -->
+
+
+    </LinearLayout>
+</LinearLayout>

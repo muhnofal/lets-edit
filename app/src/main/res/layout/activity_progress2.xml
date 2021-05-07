@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Progress2">
+
+    <!-- Header -->
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/colorSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Center Text -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Your project with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:id="@+id/ProgessMenuName"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Aisyah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Akhir Header -->
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:src="@drawable/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/checktorev"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="CHECK"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorSecond"
+            android:layout_width="70dp"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:text="YOUR PROJECT IS ALMOST DONE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="28dp"
+            android:textAlignment="center"
+            android:text="Don't worry, your editor will finish your project on time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="YOUR TYPE ORDER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="NORMAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:text="7 day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:text="3 Revision"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:text="Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="DEADLINE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/colorSecond"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:text="4 day left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

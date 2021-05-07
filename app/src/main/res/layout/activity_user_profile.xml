@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <!-- Header -->
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/colorSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Center Text -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Akhir Header -->
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/UserPhoto"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/commentprofile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+<!--            <TextView-->
+<!--                android:id="@+id/addphoto"-->
+<!--                android:textColor="@color/colorSecond"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="Add photo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/SaveButton"-->
+<!--            android:visibility="invisible"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="#fff"-->
+<!--            android:text="Save"-->
+<!--            android:background="@color/colorSecond"-->
+<!--            android:layout_width="75dp"-->
+<!--            android:layout_height="25dp"/>-->
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="Full Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/FullnameUser"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="FullNameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorSecond"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/EmailUser"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="EmailUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorSecond"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="Gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/GenderUser"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorSecond"
+                    android:text="GenderUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end" />
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/colorSecond"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

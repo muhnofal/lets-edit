@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Revision"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/colorSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Center Text -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="Revision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Akhir Header -->
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:textColor="@color/colorSecond"
+            android:text="Explain in detail so that the editor understands what you mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:textColorHighlight="@color/colorSecond"
+            android:hint="Tell your revision"
+            android:padding="12dp"
+            android:textSize="12dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textArea"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/attachment"
+                android:textStyle="bold"
+                android:textSize="8dp"
+                android:textColor="#fff"
+                android:text="Attachment"
+                android:background="@color/colorSecond"
+                android:layout_width="73dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/attachmentImage"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/SubmitRevision"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="8dp"
+            android:text="SUBMIT"
+            android:background="@color/colorSecond"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="20dp"/>
+
+
+    </LinearLayout>
+    <!-- Akhir Content -->
+
+
+</LinearLayout>

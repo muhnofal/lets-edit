@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CardView"
+    android:layout_width="160dp"
+    android:layout_height="141dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorSecond"
+    app:cardCornerRadius="9dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="9dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/EditorImage"
+                android:src="@drawable/fotobambang"
+                android:layout_marginTop="14dp"
+                android:paddingRight="-4dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/EditorName"
+                    android:paddingTop="9dp"
+                    android:textColor="#fff"
+                    android:text="Bambang"
+                    android:scrollbarSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Bintang"
+                        android:src="@drawable/bintang"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"/>
+
+                    <TextView
+                        android:id="@+id/EditorRating"
+                        android:paddingLeft="1dp"
+                        android:textSize="10dp"
+                        android:textColor="#fff"
+                        android:text="4.5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:id="@+id/EditorJob"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/editor"
+                        android:layout_width="30dp"
+                        android:layout_height="10dp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/EditorWork"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/common"
+                        android:layout_width="34dp"
+                        android:layout_height="9dp"/>
+
+                    <ImageView
+                        android:id="@+id/EditorSoftware"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/premierpro"
+                        android:layout_width="33dp"
+                        android:layout_height="9dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+<!--            <ImageView-->
+<!--                android:clickable="true"-->
+<!--                android:foreground="?android:attr/selectableItemBackground"-->
+<!--                android:id="@+id/EditorLove"-->
+<!--                android:layout_marginTop="9dp"-->
+<!--                android:src="@drawable/lovekecil"-->
+<!--                android:layout_width="15dp"-->
+<!--                android:layout_height="15dp"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:padding="5dp"
+                android:id="@+id/Quote"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Saya mahir dalam mengedit video, saya bisa memberikan kualitas editan yang baik"
+                android:layout_width="140dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/Check"
+                android:layout_gravity="center"
+                android:src="@drawable/check"
+                android:layout_width="70dp"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:id="@+id/job2"
+                android:src="@drawable/motionagraphungu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

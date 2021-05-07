@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".editor">
+
+    <!-- Header -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/colorSecond"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <!-- Center Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Editor profile"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Akhir Header -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Content -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Editor Bio -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/foto"
+                    android:layout_width="133.49dp"
+                    android:layout_height="133.49dp"
+                    android:src="@drawable/fotoaisyah" />
+
+
+                <!-- Data Editor -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Tulisan 1 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AISYAH"
+                            android:textColor="@color/colorSecond"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/contactme"
+                            android:layout_width="40dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/contactme" />
+
+                    </LinearLayout>
+                    <!-- Akhir Tulisan 1 -->
+
+                    <!-- Tulisan 2 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tempattahun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="INDONESIA | FEBRUARY 2020"
+                            android:textColor="@color/colorSecond"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <!-- Akhir Tulisan 2 -->
+
+                    <!-- Tulisan 3 -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/bintangungu" />
+
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:text="4.8"
+                            android:textColor="@color/colorSecond"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/kerjaan"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/motionagraphungu" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- Akhir Data Editor -->
+
+
+            </LinearLayout>
+            <!-- Akhir Editor Bio -->
+
+            <!-- Text Portofolio -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="PORTOFOLIO"
+                android:textColor="@color/colorSecond"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <!-- Akhir Text Portofolio -->
+
+            <!-- Membungkus Pager -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Pager di tengah -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <!-- Pager -->
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.viewpager2.widget.ViewPager2>
+
+                    <!-- Akhir Pager -->
+
+                </RelativeLayout>
+
+                <!-- Akhir Pager di tengah -->
+
+
+            </LinearLayout>
+            <!-- Akhir Membungkus Pager -->
+
+            <!-- Profile -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="PROFILE"
+                    android:textColor="@color/colorSecond"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <!-- Akhir Profile -->
+
+            <!-- Skil -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="SKILL"
+                    android:textColor="@color/colorSecond"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <!-- Software 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!-- logo n teks (1) -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/aeicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/aftericon" />
+
+                        <TextView
+                            android:id="@+id/aeteks"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="AFTER EFFECT"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <!-- akhir logo n teks (1) -->
+
+                    <!-- logo n teks (2) -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="18dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/aiicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/aiicon" />
+
+                        <TextView
+                            android:id="@+id/aiteks"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="ILUSTRATOR"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <!-- akhir logo n teks (2) -->
+
+                    <!-- logo n teks (3) -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="18dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/psicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/psicon" />
+
+                        <TextView
+                            android:id="@+id/psteks"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="PHOTOSHOP"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <!-- akhir logo n teks (3) -->
+
+                </LinearLayout>
+                <!-- Akhir Software 1-->
+
+                <!-- Software 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <!-- logo n teks (1) -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pricon" />
+
+                        <TextView
+                            android:id="@+id/prteks"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="PREMIER PRO"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <!-- akhir logo n teks (1) -->
+
+                </LinearLayout>
+                <!-- Akhir Software 2 -->
+
+            </LinearLayout>
+            <!-- Akhir Skil -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Hire -->
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Normal -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NORMAL"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="7 Day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="3 Revision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="Music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/hirenormal"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#fff"
+                        android:background="@color/colorSecond"
+                        android:text="HIRE"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"/>
+                    <!-- Akhir Normal -->
+
+                    <!-- Express -->
+                    <TextView
+                        android:layout_marginTop="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPRESS"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="25dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="4 Day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="5 Revision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="Music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="Voice Over"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="20dp"
+                        android:text="Free Assets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/hireexpress"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="#fff"
+                        android:background="@color/colorSecond"
+                        android:text="HIRE"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"/>
+                    <!-- Akhir Express -->
+
+                </LinearLayout>
+                <!-- Akhir Hire -->
+
+                <!-- Review -->
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorSecond"
+                        android:textSize="25dp"
+                        android:text="REVIEW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                     Content Review
+
+                    <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                    <!-- User Commnet -->
+                    <LinearLayout
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:src="@drawable/commentprofile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+
+                        <!-- Bio-->
+                        <LinearLayout
+                            android:layout_marginLeft="15dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <!-- Nama dan bintang -->
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:textSize="20dp"
+                                    android:text="Malih"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <ImageView
+                                    android:layout_marginLeft="9dp"
+                                    android:src="@drawable/bintangungu"
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"/>
+
+                                <TextView
+                                    android:text="5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+
+                            </LinearLayout>
+                            <!-- Akhir Nama dan bintang -->
+
+                            <TextView
+                                android:text="5 day ago"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <!-- Akhir Nama dan bintang -->
+
+                    </LinearLayout>
+                    <!-- Akhir Bio -->
+
+                    <TextView
+                        android:text="Kerja yang sangat bagus, sesuai dengan ekspetasi dan juga tepat waktu."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/mantap"
+                            android:src="@drawable/mantap"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"/>
+
+                        <ImageView
+                            android:id="@+id/cupu"
+                            android:layout_marginLeft="40dp"
+                            android:src="@drawable/cupu"
+                            android:layout_width="20dp"
+                            android:layout_height="30dp"/>
+
+
+                        <TextView
+                            android:id="@+id/replyyy"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="Reply"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/teksfield"
+                            android:visibility="invisible"
+                            android:textColor="@color/colorSecond"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"/>
+
+                        <Button
+                            android:visibility="invisible"
+                            android:id="@+id/send"
+                            android:textColor="#fff"
+                            android:background="@color/colorSecond"
+                            android:text="Send"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"/>
+
+
+                    </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- Akhir content review -->
+
+                </LinearLayout>
+
+                <!-- Akhir Review -->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Akhir Content -->
+
+    </ScrollView>
+
+
+</LinearLayout>
+
